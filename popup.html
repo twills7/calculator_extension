@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Text Input Example</title>
-  <style>
-    body { font-family: Arial, sans-serif; width: 200px; padding: 10px; }
-    input[type="text"] { width: 100%; padding: 8px; margin-top: 10px; }
-    button { padding: 8px; margin-top: 10px; width: 100%; }
-  </style>
-</head>
-<body>
-  <h2>Calculator</h2>
-<label for="operation">Choose an operation:</label>
-<select id="operation">
-    <option value="add">Add</option>
-    <option value="subtract">Subtract</option>
-    <option value="multiply">Multiply</option>
-    <option value="divide">Divide</option>
-</select>
-  <input type="text" id="userInput1" placeholder="Type something..." />
-  <input type="text" id="userInput2" placeholder="Type something..." />
-  <button id="submitButton">Submit</button>
-  <p id="output"></p>
-
-  <script src="popup.js"></script>
-</body>
+  <head>
+    <title>Text Input Example</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+  </head>
+  <body>
+    <h2>Calculator</h2>
+    <label for="operation">Choose an operation:</label>
+    <select id="operation">
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+        <option value="exponent">Exponent</option>
+        <option value="root">Root</option>
+        <option value="log">Log</option>
+    </select>
+      <input type="text" id="userInput1" placeholder="First number..." />
+      <input type="text" id="userInput2" placeholder="Second number..." />
+      <button id="submitButton">Submit</button>
+      <p id="output"></p>
+      <script src="popup.js"></script>
+  </body>
 </html>
