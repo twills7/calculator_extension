@@ -39,19 +39,19 @@ document.getElementById("submitButton").addEventListener("click", () => {
     // Display the entered text (or perform another action with it)
     switch(operation){
         case "add":
-            document.getElementById("output").textContent = `Answer: ${sum}`;
+            document.getElementById("output").textContent = `${val1} + ${val2} = ${sum}`;
             break;
         case "subtract":
-            document.getElementById("output").textContent = `Answer: ${difference}`;
+            document.getElementById("output").textContent = `${val1} - ${val2} = ${difference}`;
             break;
         case "multiply":
-            document.getElementById("output").textContent = `Answer: ${product}`;
+            document.getElementById("output").textContent = `${val1} * ${val2} = ${product}`;
             break;
         case "divide":
-            document.getElementById("output").textContent = `Answer: ${quotient}`;
+            document.getElementById("output").textContent = `${val1} / ${val2} = ${quotient}`;
             break;
         case "exponent":
-            document.getElementById("output").textContent = `Answer: ${Math.pow(val1, val2)}`;
+            document.getElementById("output").textContent = `${val1} ^ ${val2} = ${Math.pow(val1, val2)}`;
             break
         case "root":
             document.getElementById("output").textContent = `Answer: ${Math.pow(val1, 1/val2)}`;
